@@ -1,0 +1,9 @@
+[project]
+name = "ra-commons"
+version = "0.1.0"
+description = "Common tools for describing repo architecture"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "claude-agent-sdk>=0.1.1",
+]

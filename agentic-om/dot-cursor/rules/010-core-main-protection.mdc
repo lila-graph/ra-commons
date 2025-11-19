@@ -1,0 +1,19 @@
+# Core Rule: Protect main as the Trunk (v1.0.0)
+
+## Goal
+Treat main as protected and always-deployable.
+Changes must enter main via Pull Requests.
+
+## Behavior on main
+- If current branch is main, avoid edits.
+- For significant changes, direct user to create a feature branch:
+
+      git switch -c feature/<short-tag>-<description>
+
+## Safety
+- Do not suggest force pushes unless explicitly requested.
+- Encourage:
+
+      git status
+      git diff
+      git log --oneline

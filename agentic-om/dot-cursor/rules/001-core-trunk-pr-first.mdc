@@ -1,0 +1,48 @@
+# Core Rule: Trunk-Based, PR-First Workflow (v1.0.0)
+
+## Purpose
+Follow current GitHub best practices:
+- main is the single trunk.
+- All work happens on short-lived branches.
+- All changes merge into main via Pull Requests only.
+- Branches are deleted after merge.
+
+## Branching
+- Assume main is the trunk.
+- Do not commit directly to main unless the user insists AND change is trivial.
+- Always create a short-lived branch for non-trivial work.
+
+Preferred patterns:
+    feature/<task-or-topic>
+    bugfix/<issue-or-bug>
+    refactor/<area>
+    docs/<topic>
+
+Example workflow:
+    git switch -c feature/<short-tag>-<description>
+
+## Commits
+- Small, focused commits.
+- Imperative messages.
+
+## Pull Requests
+Use this PR structure:
+
+    ## Summary
+    - <1–3 bullets>
+
+    ## Context
+    - <why this exists>
+
+    ## Implementation Details
+    - <design choices>
+
+    ## Testing
+    - <validation steps>
+
+    ## Risks & Rollback
+    - <revert plan>
+
+## Validation
+- Explain which files will change and why.
+- Suggest validation steps.

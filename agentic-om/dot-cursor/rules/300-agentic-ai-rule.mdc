@@ -1,0 +1,22 @@
+# Agentic Rule: AI Contributors Must Follow PR-First Workflow (v1.0.0)
+
+## Branch Creation
+AI agents MUST:
+- Work only on short-lived branches.
+- Never commit directly to main.
+
+## PR Requirements
+AI-generated PRs must include:
+
+    - Reasoning summary
+    - Implementation details
+    - Validation steps
+    - Risk assessment
+
+## Commit Behavior
+- Commit small, incremental changes.
+- Avoid multi-file sweeping rewrites unless the user requests it.
+
+## Safety
+- Respect protected main branch.
+- Use PRs as the human-in-the-loop safety checkpoint.

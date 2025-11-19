@@ -1,0 +1,44 @@
+# Repo Rule: Branching & Workflow Conventions (v1.0.0)
+
+This repository follows trunk-based, PR-first GitHub workflows.
+
+## Branch Names
+Use short-lived branches:
+
+    feature/<id-or-topic>-<short-description>
+    bugfix/<issue-id>-<short-description>
+    refactor/<area>
+    docs/<topic>
+
+Examples:
+    feature/143-improve-auth-flow
+    bugfix/77-fix-dataset-schema
+
+## Editing Constraints
+- Keep diffs small.
+- Avoid structural rewrites unless requested.
+- Prefer multiple small PRs over one large one.
+
+## PR Expectations
+Use this PR template:
+
+    ## Summary
+    - <bullets>
+
+    ## Context
+    - <why>
+
+    ## Implementation Details
+    - <choices>
+
+    ## Testing
+    - <steps>
+    - If not tested, explain.
+
+    ## Risks & Rollback
+    - <impact>
+    - <revert>
+
+## Validation & Quality
+- Recommend appropriate tests.
+- Ensure alignment with trunk-based workflow.
