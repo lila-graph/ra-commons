@@ -1,0 +1,95 @@
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Linting and formatting
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+
+# Data and outputs
+data/
+outputs/
+logs/
+.cache/
+*.db
+*.sqlite
+*.sqlite3
+
+# Student work (keep solutions hidden)
+**/solutions/*.py
+!**/solutions/README.md
+
+# Module-specific ignores
+01-ingestion/data/raw/
+01-ingestion/data/processed/
+02-retrievers/embeddings/
+05-memory/graph_data/
+
+# Docker
+.docker/
+
+# Prefect
+.prefect/
+
+# LangSmith
+.langsmith/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+.DS_Store
+Thumbs.db
